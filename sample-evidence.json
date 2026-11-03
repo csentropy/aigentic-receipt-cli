@@ -1,0 +1,50 @@
+{
+  "is_sample": true,
+  "pairs": [
+    {
+      "candidate_id": "candidate-code",
+      "reference_id": "reference-code",
+      "reference_task_id": "reference-code",
+      "workload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "reference_workload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "evaluator": "test-suite-v1",
+      "checks": [
+        {
+          "name": "Regression suite",
+          "candidate_passed": true,
+          "reference_passed": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "candidate-research",
+      "reference_id": "reference-research",
+      "reference_task_id": "reference-research",
+      "workload_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "reference_workload_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "evaluator": "research-rubric-v1",
+      "checks": [
+        {
+          "name": "Citation rubric",
+          "candidate_passed": true,
+          "reference_passed": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "candidate-background",
+      "reference_id": "reference-background",
+      "reference_task_id": "reference-background",
+      "workload_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "reference_workload_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "evaluator": "triage-rules-v1",
+      "checks": [
+        {
+          "name": "Classification check",
+          "candidate_passed": true,
+          "reference_passed": true
+        }
+      ]
+    }
+  ]
+}

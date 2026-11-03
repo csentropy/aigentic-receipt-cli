@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "currency": "USD",
+  "billing": "metered",
+  "source": "hermes",
+  "is_sample": true,
+  "coverage": "complete",
+  "warnings": [],
+  "tasks": [
+    {
+      "id": "reference-code",
+      "name": "Coding & debugging",
+      "category": "coding",
+      "calls": 312,
+      "cost": 24.1,
+      "cost_basis": "reported",
+      "model": "premium-model-a"
+    },
+    {
+      "id": "reference-research",
+      "name": "Research & synthesis",
+      "category": "research",
+      "calls": 186,
+      "cost": 12.4,
+      "cost_basis": "reported",
+      "model": "premium-model-a"
+    },
+    {
+      "id": "reference-background",
+      "name": "Background tasks",
+      "category": "background",
+      "calls": 786,
+      "cost": 6.3,
+      "cost_basis": "reported",
+      "model": "premium-model-a"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "currency": "USD",
+  "billing": "metered",
+  "source": "hermes",
+  "is_sample": true,
+  "coverage": "complete",
+  "warnings": [],
+  "tasks": [
+    {
+      "id": "candidate-code",
+      "name": "Coding & debugging",
+      "category": "coding",
+      "calls": 312,
+      "cost": 15.2,
+      "reference_cost": 24.1,
+      "alternative_cost": 13.5,
+      "cost_basis": "reported",
+      "reference_cost_basis": "reported",
+      "model": "efficient-model-b",
+      "reference_model": "premium-model-a",
+      "comparison": {
+        "reference_task_id": "reference-code",
+        "workload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "reference_workload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "evaluator": "test-suite-v1",
+        "checks": [
+          {
+            "name": "Regression suite",
+            "candidate_passed": true,
+            "reference_passed": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "candidate-research",
+      "name": "Research & synthesis",
+      "category": "research",
+      "calls": 186,
+      "cost": 7.3,
+      "reference_cost": 12.4,
+      "alternative_cost": 6.5,
+      "cost_basis": "reported",
+      "reference_cost_basis": "reported",
+      "model": "efficient-model-b",
+      "reference_model": "premium-model-a",
+      "comparison": {
+        "reference_task_id": "reference-research",
+        "workload_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "reference_workload_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "evaluator": "research-rubric-v1",
+        "checks": [
+          {
+            "name": "Citation rubric",
+            "candidate_passed": true,
+            "reference_passed": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "candidate-background",
+      "name": "Background tasks",
+      "category": "background",
+      "calls": 786,
+      "cost": 1.88,
+      "reference_cost": 6.3,
+      "alternative_cost": 1.5,
+      "cost_basis": "reported",
+      "reference_cost_basis": "reported",
+      "model": "efficient-model-b",
+      "reference_model": "premium-model-a",
+      "comparison": {
+        "reference_task_id": "reference-background",
+        "workload_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "reference_workload_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "evaluator": "triage-rules-v1",
+        "checks": [
+          {
+            "name": "Classification check",
+            "candidate_passed": true,
+            "reference_passed": true
+          }
+        ]
+      }
+    }
+  ]
+}
